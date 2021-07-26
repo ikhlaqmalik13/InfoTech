@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Infotech</string>
+
+    <string name="welcome_mypcot">Welcome, <b>Mypcot !!</b></string>
+    <string name="active_orders_string">You have <big>3</big> <br/>active orders from</string>
+    <string name="deliveries_string"> <big>03</big> deliveries </string>
+    <string name="customers_string"><big>15</big> new customers</string>
+</resources>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:fitsSystemWindows="true"
+        android:id="@+id/toolbar_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorWhite"
+        app:elevation="0dp"
+        android:translationZ="0.1dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/mainActivityCollapsingToolbarLayout"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <Toolbar
+                android:animateLayoutChanges="true"
+                android:id="@+id/mainActivityToolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:contentInsetStart="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true">
+
+                    <ImageView
+                        android:padding="4dp"
+                        android:id="@+id/openDrawerKashGalleryLogoImageView"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="18dp"
+                        app:srcCompat="@drawable/ic_group_919" />
+
+                    <LinearLayout
+                        android:id="@+id/homeActionLinearLayout"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:padding="3dp"
+                            android:id="@+id/mainActivitySearchImageView"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:visibility="visible"
+                            app:srcCompat="@drawable/ic_group_916" />
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/mainActivityAddPhotoImageView"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:padding="3dp"
+                                android:visibility="visible"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ic_group_917" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textColor="@color/color_343434"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="@+id/mainActivityAddPhotoImageView"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+
+                            android:id="@+id/loginUserProfileImageView"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@mipmap/ic_launcher"
+                            android:visibility="visible"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="@color/colorWhite"/>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_above="@+id/bottomNavigationView"
+        android:scrollbars="none"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@id/toolbar_app_bar_layout"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:paddingEnd="18dp"
+            android:paddingStart="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/welcome_mypcot"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/font_color"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Here is your dasshboard" />
+                </LinearLayout>
+
+                <ImageView
+                    android:padding="3dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_group_918" />
+
+            </RelativeLayout>
+
+
+            <HorizontalScrollView
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <include
+                        layout="@layout/first_card_design_layout"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="6dp"
+                         />
+
+                    <include layout="@layout/second_card_design_layout"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginStart="6dp"/>
+
+
+                    <include layout="@layout/third_card_design_layout"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="6dp"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </HorizontalScrollView>
+
+            <include layout="@layout/calender_info_design_layout" />
+
+            <include layout="@layout/horizontal_calendar" />
+
+
+            <include
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                layout="@layout/new_order_created_card" />
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:theme="@style/Theme.Fab_Bottom_app_bar"
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:itemTextColor="@color/font_color"
+            android:background="@android:color/white"
+            app:menu="@menu/bottom_navigation" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:backgroundTint="@color/font_color"
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_anchor="@id/bottomAppBar" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

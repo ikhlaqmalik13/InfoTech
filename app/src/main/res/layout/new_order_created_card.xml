@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="1dp">
+
+    <RelativeLayout
+        android:padding="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="8dp"
+            android:background="@color/color_fe804e"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_group_900" />
+
+        <LinearLayout
+            android:layout_toLeftOf="@id/imageView2"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="@color/font_color"
+                android:text="New order created"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/font_color"
+                android:text="New Order created with Order"
+                />
+
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/color_fe804e"
+                android:text="09:00 AM" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_right_alt_24"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
